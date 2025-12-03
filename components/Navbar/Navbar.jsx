@@ -41,17 +41,18 @@ export default function Navbar() {
             <div className="nav-search">
               <nav className="nav-links">
                 <a href="#hero" className="nav-link">
-                  Home
+                 Our Portfolio
                 </a>
-                <a href="#sectors" className="nav-link">
-                  Our Sectors
-                </a>
+                <a href="#sectors" className="nav-link">Our Sectors</a>
                 <a href="#incore" className="nav-link">
                   InCORE
                 </a>
-                <a href="#insights" className="nav-link">
-                  INDsights
+                <a href=" #insights" className="nav-link">
+                 INDsights
                 </a>
+                {/* <a href="" className="nav-link">
+                  About us
+                </a> */}
                 <a href="#contact" className="nav-link">
                   Get in Touch
                 </a>
@@ -84,7 +85,7 @@ export default function Navbar() {
 
       <div className={`mobile-menu ${open ? "open" : ""}`}>
         <a href="#hero" onClick={() => setOpen(false)}>
-          Home
+          Our Portfolio
         </a>
         <a href="#sectors" onClick={() => setOpen(false)}>
           Our Sectors
@@ -93,11 +94,10 @@ export default function Navbar() {
           InCORE
         </a>
         <a href="#insights" onClick={() => setOpen(false)}>
-          INDsights
+         INDsights
         </a>
-        <a href="#contact" onClick={() => setOpen(false)}>
-          Get in Touch
-        </a>
+        
+        <a href="#contact" onClick={() => setOpen(false)}> Get in Touch</a>
       </div>
     </div>
   );
