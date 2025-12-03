@@ -1,0 +1,65 @@
+.incore-section {
+  width: 100%;
+  text-align: center;
+  background-color: #FFEDE4;
+  background: linear-gradient(to bottom, #FFF 0%, #ffe7db 100%);
+}
+
+.incore-header {
+  padding: 0 10px;
+}
+
+.incore-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.highlight {
+  color: #E04A00;
+}
+
+.incore-subtext {
+  max-width: 650px;
+  margin: 0 auto 0px auto;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+
+}
+
+.stack-par {
+  max-width: 650px;
+  margin: 10px auto 0px auto;
+  font-size: 15px;
+  color: #000000;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.puzzle-image-wrapper {
+  padding: 50px 10px 70px 10px;
+
+}
+
+.puzzle-image {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .incore-title {
+    font-size: 1.6rem;
+  }
+
+  .incore-subtext {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}

@@ -1,20 +1,20 @@
 {
-  "name": "indifly",
-  "version": "0.1.0",
+  "name": "nextjs-indifly-sample",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "next start"
   },
   "dependencies": {
-    "next": "16.0.5",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
-  },
-  "devDependencies": {
-    "eslint": "^9",
-    "eslint-config-next": "16.0.5"
+    "@netlify/plugin-nextjs": "^5.15.1",
+    "bootstrap": "^5.3.8",
+    "formik": "^2.2.9",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.6.0",
+    "yup": "^1.2.0"
   }
 }

@@ -1,0 +1,24 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, #024397, #E04A00);
+  color: #ffffff;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  pointer-events: auto;
+}
+.codeLine {
+  display: inline;
+}
+.headerText {
+  font-size: 10px;
+}
+@media (max-width: 480px) {
+  .codeLine {
+    display: block;
+    text-align: center;
+  }
+}

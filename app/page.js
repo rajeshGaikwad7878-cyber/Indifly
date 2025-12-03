@@ -1,66 +1,48 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Contact from "../components/Contact/Contact";
+import Ventures from "@/components/Venture/Ventures";
+import Footer from "@/components/Footer/Footer";
+import OurSectors from "@/components/Sectors/Sectors";
+import OurMission from "@/components/OurMission";
+import InCore from "@/components/InCore/Incore";
+import Insights from "@/components/InSights/Insights";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      <main>
+        <section id="hero" className="section hero">
+          <div className="container ventures">
+            <Ventures />
+          </div>
+        </section>
+        <section id="" className="section ">
+          <div className="container ">
+            <OurMission />
+          </div>
+        </section>
+
+        <section id="sectors" className="section">
+          <div className="container text-center">
+            <OurSectors />
+          </div>
+        </section>
+
+        <section id="incore" className="">
+          <div className="">
+            <InCore />
+          </div>
+        </section>
+
+        <section id="insights" style={{ background: "#ffeedf" }}>
+          <div className="container">
+            <Insights />
+          </div>
+        </section>
+        <section id="contact" className="section">
+          <Contact />
+        </section>
+        <Footer />
       </main>
-    </div>
+    </>
   );
 }
