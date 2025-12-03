@@ -31,8 +31,14 @@ export default function OurSectors() {
         },
         IndiNXT: {
           title: "UPI Infrastructure",
-          description: "UPI infrastructure built for Bharat, ready for the world.",
-          bullets: ["UPI Switch", "T-OTP solutions", "Merchant platform", "High availability systems"],
+          description:
+            "UPI infrastructure built for Bharat, ready for the world.",
+          bullets: [
+            "UPI Switch",
+            "T-OTP solutions",
+            "Merchant platform",
+            "High availability systems",
+          ],
           image: "/images/payments-indNXT.png",
         },
       },
@@ -45,14 +51,24 @@ export default function OurSectors() {
           title: "Whitelabel Fintech Infrastructure",
           description:
             "Empowers institutions to launch fintech services under their own brand.",
-          bullets: ["Prepaid cards & wallets", "Micro ATM & AePS", "Lending enablement", "Enterprise-grade security"],
+          bullets: [
+            "Prepaid cards & wallets",
+            "Micro ATM & AePS",
+            "Lending enablement",
+            "Enterprise-grade security",
+          ],
           image: "/images/finance-sec.png",
         },
         Indikendra: {
           title: "Last Mile Digital Banking",
           description:
             "Bridges financial access through digital & assisted services.",
-          bullets: ["Payment solutions", "Micro ATM", "Lending tools", "KYC services"],
+          bullets: [
+            "Payment solutions",
+            "Micro ATM",
+            "Lending tools",
+            "KYC services",
+          ],
           image: "/images/finance-indi.png",
         },
       },
@@ -63,8 +79,14 @@ export default function OurSectors() {
       content: {
         IndiSpeed: {
           title: "Smarter Logistics for Bharat",
-          description: "ONDC-powered courier and delivery orchestration platform.",
-          bullets: ["API-first logistics", "Bulk dispatch dashboard", "Intercity & hyperlocal delivery", "Transparent pricing & tracking"],
+          description:
+            "ONDC-powered courier and delivery orchestration platform.",
+          bullets: [
+            "API-first logistics",
+            "Bulk dispatch dashboard",
+            "Intercity & hyperlocal delivery",
+            "Transparent pricing & tracking",
+          ],
           image: "/images/ondc.png",
         },
       },
@@ -85,23 +107,23 @@ export default function OurSectors() {
       <div className="ourSectors-container">
         <div className="text-center">
           <Image
-                src="/images/our-sector-bg.png"
-                   alt="our-sector-bg.png" className="our-sector-bg.png"
-                    width={300}
-                    height={80}
-              />
-              <div className="heading-text">
-          <h3 className="section-title">Our Sectors</h3>
-          
+            src="/images/our-sector-bg.png"
+            alt="our-sector-bg.png"
+            className="our-sector-bg.png"
+            width={300}
+            height={80}
+          />
+          <div className="heading-text">
+            <h3 className="section-title">Our Sectors</h3>
           </div>
           <h5 className="section-sub">
-  <span className="integrated">Integrated</span>,{" "}
-  <span className="inclusive">Inclusive</span> {" "}
-  <span className="innovative">& Innovative</span>
-</h5>
+            <span className="integrated">Integrated</span>,{" "}
+            <span className="inclusive">Inclusive</span>{" "}
+            <span className="innovative">& Innovative</span>
+          </h5>
           <p className="small-desc">
-            Equipping diverse brands in multiple sectors with essential resources,
-            expertise, and unwavering support
+            Equipping diverse brands in multiple sectors with essential
+            resources, expertise, and unwavering support
           </p>
         </div>
 
@@ -137,8 +159,12 @@ export default function OurSectors() {
 
               {activeContent && (
                 <>
-                  <h4 className="content-title">{activeContent && activeContent.title}</h4>
-                  <p className="content-desc">{activeContent && activeContent.description}</p>
+                  <h4 className="content-title">
+                    {activeContent && activeContent.title}
+                  </h4>
+                  <p className="content-desc">
+                    {activeContent && activeContent.description}
+                  </p>
 
                   <ul className="list-points">
                     {activeContent.bullets.map((b, index) => (

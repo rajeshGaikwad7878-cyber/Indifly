@@ -78,7 +78,6 @@ h2,h5,h4, p ,ul{
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 40px;
 }
 
 .mainTabBtn {
@@ -103,7 +102,7 @@ h2,h5,h4, p ,ul{
     border: none;
     align-items: center;
     border-radius: 20px;
-    margin: 30px 100px;
+    margin: 20px 100px;
     justify-content: space-between;
    background: linear-gradient(210deg, #FFF 20%, #FECCB2);
    min-height: 400px;
@@ -204,24 +203,26 @@ h2,h5,h4, p ,ul{
 
   .content-left, 
   .content-right {
-    width: 100%;                     /* full width on mobile */
+    width: 100%;                   
   }
 
   .content-right {
-    display: none;                   /* hide image box */
+    display: none;                  
   }
 
   .content-left {
     display: flex;
-    justify-content: center;         /* center vertically */
+    justify-content: center;      
     align-items: center;
   }
 
   .content-box {
-    max-width: 500px;                /* nice centered width */
+    max-width: 500px;                
   }
-
+.mainTabBtn {
+  padding: 5px 20px;
+}
   .btn-group {
-    justify-content: center;         /* center buttons */
+    justify-content: center;    
   }
 }
